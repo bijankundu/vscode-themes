@@ -1,0 +1,28 @@
+{
+  "name": "bk-themes",
+  "displayName": "VSCode Custom Themes",
+  "version": "1.0.0",
+  "description": "Custom theme for Visual Studio Code.",
+  "repository": "https://github.com/bijankundu/vscode-themes",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "scripts": {
+    "build": "vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ultrafocus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ultrafocus.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.19.0"
+  }
+}
